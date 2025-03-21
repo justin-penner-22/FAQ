@@ -1,0 +1,105 @@
+.root {
+    --white: rgb(255, 255, 255);
+    --light-pink: rgb(144, 0, 247);
+    --grayish-purple: rgb(122, 105, 125);
+    --dark-purple: rgb(34, 21, 36);
+}
+
+body {
+    font-family: roboto-medium, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*Themes*/
+
+#page-background {
+    background-color: linen;
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-1 {
+    width: 90%;
+    min-height: 80vh;
+    position: relative;
+    background-color: rgb(248, 219, 253);
+    background-image: url("Images/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttom-picture {
+    height: 100%;
+}
+
+.faq-card {
+    background-color: rgb(255 255 255);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    border-radius: 20px;
+}
+
+.faq-head {
+    font-size: clamp(20px, 3vw, 50px);
+    color: rgb(34, 21, 36);
+}
+
+.list-item {
+    border-top: solid lightgray 1px;
+    padding: 25px;
+}
+
+.faq-question {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+    background-image: url("Images/images/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 45px;
+    font-size: clamp(12px, 1vw, 25px);
+}
+
+.faq-question:hover {
+    color: rgb(144, 0, 247);
+    cursor: pointer;
+}
+
+.faq-answer {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+
+    max-height: 0;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 99ms;
+    transition-delay: 0s;
+}
+
+.list-item.show .faq-answer {
+    max-height: 1000px;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.list-item.show .faq-question {
+    background-image: url(Images/images/icon-minus.svg);
+}
