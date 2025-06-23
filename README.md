@@ -1,6 +1,6 @@
 # Projekt: Accordion FAQ Card
 
-## Dies ist eine interaktive FAQ-Komponente (Accordion), die nach Klick auf eine Frage die zugehörige Antwort ein- und ausfährt. Die Aufgabenstellung stammt von Frontend Mentor und wurde eigenständig umgesetzt. Ziel war es, das Design den Vorgaben so präzise wie möglich nachzubauen.
+Dies ist eine interaktive FAQ-Komponente (Accordion), die nach Klick auf eine Frage die zugehörige Antwort ein- und ausfährt. Die Aufgabenstellung stammt von Frontend Mentor und wurde eigenständig umgesetzt. Ziel war es, das Design den Vorgaben so präzise wie möglich nachzubauen.
 
 ## Features
 
